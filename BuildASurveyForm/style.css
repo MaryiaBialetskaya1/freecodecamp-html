@@ -1,17 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
-
-.form-style{
-    max-width: 450px;
+#title{
     font-family: 'Varela', sans-serif;
+    text-align: center;
+    font-size: 54px;
 }
-.form-style label{
+#description{
+    font-family: 'Varela', sans-serif;
+    text-align: center;
+}
+.form-style{
+    max-width: 850px;
+    font-family: 'Varela', sans-serif;
+    margin: auto;
+}
+.personal{
     display:block;
 	margin-bottom: 10px;
 }
 #name-label,
 #email-label,
 #number-label,
-#dropdown-label{
+#dropdown-label,
+#message-label{
     float: left;
 	width: 100px;
 	color: #F072A9;

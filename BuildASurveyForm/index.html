@@ -84,23 +84,23 @@
 <body>
     <div class="form-style">
         <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form">
+        <p id="description">Thank you for taking the time to contact us</p>
+      <form id="survey-form">
         <fieldset>
             <legend>Personal</legend>
-        <div>
+        <div class="personal">
             <label for="name" id="name-label">Name</label>
             <input type="text" name="name" id="name" required placeholder="Name">
         </div>
-        <div>
+        <div class="personal">
             <label for="name" id="email-label">Email</label>
             <input type="email" name="email" id="email" required placeholder="Email">
         </div>
-        <div>
+        <div class="personal">
             <label for="number" id="number-label">Number</label>
             <input type="number" name="number" id="number" min="1" max="1000" placeholder="Number">
         </div>
-        <div>
+        <div class="personal">
             <label for="dropdown" id="dropdown-label">Subject</label>
             <select id="dropdown" name="pets">
                 <option value="">Appointment</option>
@@ -150,15 +150,15 @@
           <div class="textarea">
             <fieldset>
                 <legend>Message</legend>
-                <label for="story">Message</label>
-                <textarea id="story" name="story" rows="5" cols="33">
+                <label for="story" id="message-label">Message</label>
+                <textarea id="story" name="story">
                 </textarea>
             </fieldset>
           </div>
           <div class="button">
             <input type="submit" id="submit">
           </div>
-    </form>
+      </form>
     </div>
 </body>
 </html>
