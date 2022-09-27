@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<!-- <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
+        <fieldset>
+            <legend>Personal</legend>
         <div>
             <label for="name" id="name-label">Enter Name</label>
             <input type="text" name="name" id="name" required placeholder="Name">
@@ -23,6 +25,7 @@
             <label for="number" id="number-label"> Enter Number</label>
             <input type="number" name="number" id="number" min="10" max="100" placeholder="Num">
         </div>
+        </fieldset>
         <div>
             <select id="dropdown" name="pets">
                 <option value="">--Please choose an option--</option>
@@ -77,5 +80,85 @@
             <input type="submit" id="submit">
           </div>
     </form>
+</body> -->
+<body>
+    <div class="form-style">
+        <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal</legend>
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name">
+        </div>
+        <div>
+            <label for="name" id="email-label">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Email">
+        </div>
+        <div>
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" min="1" max="1000" placeholder="Number">
+        </div>
+        <div>
+            <label for="dropdown" id="dropdown-label">Subject</label>
+            <select id="dropdown" name="pets">
+                <option value="">Appointment</option>
+                <option value="interview">Interview</option>
+                <option value="regarding a post">Regarding a post</option>
+            </select>
+        </div>
+        </fieldset>
+        <div class="checkbox">
+            <fieldset>
+              <legend>Select things you like:</legend>
+              <div>
+                <input type="checkbox" id="coding" name="interest" value="coding" />
+                <label for="coding">Coding</label>
+              </div>
+              <div>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music">Music</label>
+              </div>
+              <div>
+                <input type="checkbox" id="read" name="interest" value="read" />
+                <label for="music">Read</label>
+              </div>
+              <div>
+                <input type="checkbox" id="dance" name="interest" value="dance" />
+                <label for="music">Dance</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="radiobutton">
+            <fieldset>
+              <legend>Select a maintenance drone:</legend>
+              <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Huey</label>
+              </div>
+              <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+              </div>
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Louie</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="textarea">
+            <fieldset>
+                <legend>Message</legend>
+                <label for="story">Message</label>
+                <textarea id="story" name="story" rows="5" cols="33">
+                </textarea>
+            </fieldset>
+          </div>
+          <div class="button">
+            <input type="submit" id="submit">
+          </div>
+    </form>
+    </div>
 </body>
 </html>
