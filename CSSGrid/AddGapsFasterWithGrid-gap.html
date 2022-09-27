@@ -1,6 +1,6 @@
-<!-- UseCSSGridUnitsToChangeTheSizeOfColumnsAndRows.html -->
+<!-- AddGapsFasterWithGrid-gap.html -->
 
-<!-- TASK: Make a grid with three columns whose widths are as follows: 1fr, 100px, and 2fr. -->
+<!-- Use grid-gap to introduce a 10px gap between the rows and 20px gap between the columns. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +20,15 @@
 
         .container {
           font-size: 40px;
+          min-height: 300px;
           width: 100%;
           background: LightGray;
           display: grid;
-          grid-template-columns: 1fr 100px 2fr;
-          grid-template-rows: 50px 50px;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px 20px;
         }
       </style>
-
       <div class="container">
         <div class="d1">1</div>
         <div class="d2">2</div>
