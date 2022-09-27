@@ -3,10 +3,12 @@
     font-family: 'Varela', sans-serif;
     text-align: center;
     font-size: 54px;
+    color: #400D51;
 }
 #description{
     font-family: 'Varela', sans-serif;
     text-align: center;
+    color: #937DC2;
 }
 .form-style{
     max-width: 850px;
@@ -28,6 +30,41 @@
 	font-weight: bold;
 	font-size: 13px;
 	text-shadow: 1px 1px 1px #fff;
+}
+.checkbox-label,
+.radio-label{
+    width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #F072A9;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
 .form-style fieldset{
     border-radius: 10px;
