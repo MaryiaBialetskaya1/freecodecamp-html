@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="form-style">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to contact us</p>
+      <form id="survey-form">
+        <fieldset>
+            <legend>Personal</legend>
+        <div class="personal">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name">
+        </div>
+        <div class="personal">
+            <label for="name" id="email-label">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Email">
+        </div>
+        <div class="personal">
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="number" min="1" max="1000" placeholder="Number">
+        </div>
+        <div class="personal">
+            <label for="dropdown" id="dropdown-label">Subject</label>
+            <select id="dropdown" name="pets">
+                <option value="">Appointment</option>
+                <option value="interview">Interview</option>
+                <option value="regarding a post">Regarding a post</option>
+            </select>
+        </div>
+        </fieldset>
+        <div class="checkbox">
+            <fieldset>
+              <legend>Select things you like:</legend>
+              <div>
+                <input type="checkbox" id="coding" name="interest" value="coding" />
+                <label for="coding" class="checkbox-label">Coding</label>
+              </div>
+              <div>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music" class="checkbox-label">Music</label>
+              </div>
+              <div>
+                <input type="checkbox" id="read" name="interest" value="read" />
+                <label for="music" class="checkbox-label">Read</label>
+              </div>
+              <div>
+                <input type="checkbox" id="dance" name="interest" value="dance" />
+                <label for="music" class="checkbox-label">Dance</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="radiobutton">
+            <fieldset>
+              <legend>Select highest Level of Education Completed:</legend>
+              <div>
+                <input type="radio" id="school" name="education" value="school" checked>
+                <label for="school" class="radio-label">School</label>
+              </div>
+              <div>
+                <input type="radio" id="associate" name="education" value="associate">
+                <label for="associate" class="radio-label">Associate Degree</label>
+              </div>
+              <div>
+                <input type="radio" id="bachelor" name="education" value="bachelor">
+                <label for="bachelor" class="radio-label">Bachelor Degree</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="textarea">
+            <fieldset>
+                <legend>Message</legend>
+                <label for="story" id="message-label">Message</label>
+                <textarea id="story" name="story">
+                </textarea>
+            </fieldset>
+          </div>
+          <div class="button">
+            <input type="submit" id="submit">
+          </div>
+      </form>
+    </div>
+</body>
+</html>
