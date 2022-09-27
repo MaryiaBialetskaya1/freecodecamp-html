@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-        <label for="name" id="name-label">Enter Name</label>
-        <input type="text" name="name" id="name" required placeholder="Name">
-        <label for="name" id="email-label">Enter Email</label>
-        <input type="email" name="email" id="email" required placeholder="Email">
-        <label for="number" id="number-label"> Enter Number</label>
-        <input type="number" name="number" id="number" min="10" max="100" placeholder="Num">
-        <select id="dropdown" name="pets">
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-        </select>
+        <div>
+            <label for="name" id="name-label">Enter Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name">
+        </div>
+        <div>
+            <label for="name" id="email-label">Enter Email</label>
+            <input type="email" name="email" id="email" required placeholder="Email">
+        </div>
+        <div>
+            <label for="number" id="number-label"> Enter Number</label>
+            <input type="number" name="number" id="number" min="10" max="100" placeholder="Num">
+        </div>
+        <div>
+            <select id="dropdown" name="pets">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+        </div>
         <div class="checkbox">
             <fieldset>
               <legend>Select things you like:</legend>
